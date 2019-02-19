@@ -70,8 +70,8 @@ function detectmob() {
 					el.style.left = (e.pageX - offsetX) + "px"
 					el.style.top = (e.pageY - offsetY) + "px"
 
-                    var width = el.style.width.split("px")[0];
-                    var height = el.style.height.split("px")[0];
+                    var height = parseInt(el.style.height.split("px")[0]);
+                    var width = height;
                     if (e.pageX - offsetX < 0) {
                         el.style.left = "0px";
                     }
