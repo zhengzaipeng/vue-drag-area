@@ -70,11 +70,12 @@ function detectmob() {
 					el.style.left = (e.pageX - offsetX) + "px"
 					el.style.top = (e.pageY - offsetY) + "px"
 
+                    var width = el.style.width.split("px")[0];
+                    var height = el.style.height.split("px")[0];
                     if (e.pageX - offsetX < 0) {
                         el.style.left = "0px";
                     }
                     if (e.pageX - offsetX + width > 1280) {
-                        var width = el.style.width.split("px")[0];
                         el.style.left = (1280 - width) + "px";
                     }
 
@@ -82,7 +83,6 @@ function detectmob() {
                         el.style.top = "0px";
                     }
                     if (e.pageY - offsetY + height > 720) {
-                        var height = el.style.height.split("px")[0];
                         el.style.top = (720 - height) + "720px";
                     }
 				}
