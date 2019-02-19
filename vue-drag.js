@@ -83,7 +83,7 @@ function detectmob() {
                         el.style.top = "0px";
                     }
                     if (e.pageY - offsetY + height > 720) {
-                        el.style.top = (720 - height) + "720px";
+                        el.style.top = (720 - height) + "px";
                     }
 				}
 				function up() {
