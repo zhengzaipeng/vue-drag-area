@@ -32,8 +32,10 @@ function detectmob() {
 				}
 				var offsetX = 0
 				var offsetY = 0
-				var width = e1.style.width.split("px")[0];
-				var height = e1.style.height.split("px")[0];
+
+                var width = el.style.width.split("px")[0];
+                var height = el.style.height.split("px")[0];
+                
 				function down(e) {
 					offsetX = (e.pageX - el.offsetLeft)
 					offsetY = (e.pageY - el.offsetTop)
