@@ -35,7 +35,7 @@ function detectmob() {
 
                 var width = el.style.width.split("px")[0];
                 var height = el.style.height.split("px")[0];
-                
+
 				function down(e) {
 					offsetX = (e.pageX - el.offsetLeft)
 					offsetY = (e.pageY - el.offsetTop)
@@ -75,17 +75,17 @@ function detectmob() {
 					el.style.top = (e.pageY - offsetY) + "px"
 
                     if (e.pageX - offsetX < 0) {
-                    	e1.style.left = "0px";
+                        el.style.left = "0px";
                     }
                     if (e.pageX - offsetX + width > 1280) {
-                        e1.style.left = (1280 - width) + "px";
+                        el.style.left = (1280 - width) + "px";
                     }
 
                     if (e.pageY - offsetY < 0) {
-                        e1.style.top = "0px";
+                        el.style.top = "0px";
                     }
                     if (e.pageY - offsetY + height > 720) {
-                        e1.style.top = (720 - height) + "720px";
+                        el.style.top = (720 - height) + "720px";
                     }
 				}
 				function up() {
